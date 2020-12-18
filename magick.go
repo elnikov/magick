@@ -61,7 +61,7 @@ func GPath() (string, error) {
 
 // see https://imagemagick.org/script/animate.php
 func (e *Engine) Animate(arg ...string) *exec.Cmd {
-	return e.Command("animate", arg...)
+	return e.Command("/usr/bin/animate", arg...)
 }
 
 // see https://imagemagick.org/script/compare.php
@@ -71,47 +71,47 @@ func (e *Engine) Compare(arg ...string) *exec.Cmd {
 
 // see https://imagemagick.org/script/composite.php
 func (e *Engine) Composite(arg ...string) *exec.Cmd {
-	return e.Command("composite", arg...)
+	return e.Command("/usr/bin/composite", arg...)
 }
 
 // see https://imagemagick.org/script/conjure.php
 func (e *Engine) Conjure(arg ...string) *exec.Cmd {
-	return e.Command("conjure", arg...)
+	return e.Command("/usr/bin/conjure", arg...)
 }
 
 // see https://imagemagick.org/script/convert.php
 func (e *Engine) Convert(arg ...string) *exec.Cmd {
-	return e.Command("convert", arg...)
+	return e.Command("/usr/bin/convert", arg...)
 }
 
 // see https://imagemagick.org/script/display.php
 func (e *Engine) Display(arg ...string) *exec.Cmd {
-	return e.Command("display", arg...)
+	return e.Command("/usr/bin/display", arg...)
 }
 
 // see https://imagemagick.org/script/identify.php
 func (e *Engine) Identify(arg ...string) *exec.Cmd {
-	return e.Command("identify", arg...)
+	return e.Command("/usr/bin/identify", arg...)
 }
 
 // see https://imagemagick.org/script/import.php
 func (e *Engine) Importc(arg ...string) *exec.Cmd {
-	return e.Command("import", arg...)
+	return e.Command("/usr/bin/import", arg...)
 }
 
 // see https://imagemagick.org/script/mogrify.php
 func (e *Engine) Mogrify(arg ...string) *exec.Cmd {
-	return e.Command("mogrify", arg...)
+	return e.Command("/usr/bin/mogrify", arg...)
 }
 
 // see https://imagemagick.org/script/montage.php
 func (e *Engine) Montage(arg ...string) *exec.Cmd {
-	return e.Command("montage", arg...)
+	return e.Command("/usr/bin/montage", arg...)
 }
 
 // see https://imagemagick.org/script/stream.php
 func (e *Engine) Stream(arg ...string) *exec.Cmd {
-	return e.Command("stream", arg...)
+	return e.Command("/usr/bin/stream", arg...)
 }
 
 // Which is cross-platform way of finding an executable.
